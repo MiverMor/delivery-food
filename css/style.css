@@ -23,6 +23,16 @@ button {
   background-color: #1890FF;
 }
 
+.input {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  border: 1px solid #D9D9D9;
+  border-radius: 2px;
+  color: #BFBFBF;
+  outline: none;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -427,17 +437,10 @@ template {
   width: 16px;
   height: 16px;
 }
-.search__input {
+.search__input-heading {
   width: 690px;
   min-height: 40px;
   padding: 8px 12px 8px 32px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 150%;
-  border: 1px solid #D9D9D9;
-  border-radius: 2px;
-  color: #BFBFBF;
-  outline: none;
 }
 
 .promo {
@@ -467,4 +470,115 @@ template {
   color: #302c34;
   margin-top: 15px;
   margin-bottom: 0;
+}
+
+.restaurants {
+  margin-top: 58px;
+}
+.restaurants__heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.restaurants__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  color: #000;
+  margin: 0;
+}
+.restaurants__input-heading {
+  background-image: url(../../img/icon/search.svg);
+  background-repeat: no-repeat;
+  background-position: left 10px center;
+  max-width: 305px;
+  min-height: 34px;
+  padding: 5px 12px 5px 32px;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+.cards__image {
+  width: 384px;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.cards__card {
+  border-radius: 7px;
+  max-width: 384px;
+  height: 380px;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
+  margin-top: 30px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.cards__text {
+  padding: 20px 24px 35px 24px;
+}
+.cards__heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cards__heading-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 133%;
+  color: #000;
+  margin: 0;
+}
+.cards__heading-tag {
+  border-radius: 2px;
+  padding: 1px 8px;
+  height: 22px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  background-color: #000;
+  color: #fff;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.info__rating {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 178%;
+  color: #ffc107;
+  margin-right: 26px;
+}
+.info__rating-star {
+  margin-right: 10px;
+}
+.info__price {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 178%;
+  color: #8C8C8C;
+  margin-right: 10px;
+}
+.info__price::after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #8C8C8C;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+.info__category {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 178%;
+  color: #8C8C8C;
 }/*# sourceMappingURL=style.css.map */

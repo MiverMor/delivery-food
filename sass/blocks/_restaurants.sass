@@ -1,0 +1,90 @@
+.restaurants
+  margin-top: 58px
+  &__heading
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &__title
+    font-weight: 700
+    font-size: 36px
+    line-height: 42px
+    color: #000
+    margin: 0
+  &__input-heading
+    background-image: url(../../img/icon/search.svg)
+    background-repeat: no-repeat
+    background-position: left 10px center
+    max-width: 305px
+    min-height: 34px
+    padding: 5px 12px 5px 32px
+.cards
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  justify-content: space-between
+  margin-top: 16px
+  &__image
+    width: 384px
+    height: 250px
+    object-fit: cover
+  &__card
+    border-radius: 7px
+    max-width: 384px
+    height: 380px
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05)
+    margin-top: 30px
+    overflow: hidden
+    cursor: pointer
+  &__text
+    padding: 20px 24px 35px 24px
+  &__heading
+    display: flex
+    align-items: center
+    justify-content: space-between
+    &-title
+      font-weight: 700
+      font-size: 24px
+      line-height: 133%
+      color: #000
+      margin: 0
+    &-tag
+      border-radius: 2px
+      padding: 1px 8px
+      height: 22px
+      font-weight: 400
+      font-size: 12px
+      line-height: 20px
+      background-color: #000
+      color: #fff
+.info
+  display: flex
+  align-items: center
+  margin-top: 10px
+  &__rating
+    font-weight: 700
+    font-size: 18px
+    line-height: 178%
+    color: #ffc107
+    margin-right: 26px
+    &-star
+      margin-right: 10px
+  &__price
+    font-weight: 400
+    font-size: 18px
+    line-height: 178%
+    color: #8C8C8C
+    margin-right: 10px
+    &::after
+      content: ""
+      width: 5px
+      height: 5px
+      border-radius: 50%
+      background: #8C8C8C
+      display: inline-block
+      vertical-align: middle
+      margin-left: 10px
+  &__category
+    font-weight: 400
+    font-size: 18px
+    line-height: 178%
+    color: #8C8C8C
