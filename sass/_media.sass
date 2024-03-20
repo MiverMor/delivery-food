@@ -1,3 +1,125 @@
 @media (max-width: 1200px)
   .container
     max-width: 960px
+  .search
+    &__input
+      width: 490px
+  .promo
+    &__offer
+      background-size: 510px
+  .info
+    &__rating
+      margin-right: 10px
+      &-star
+        margin-right: 5px
+    &__price, &__category
+      font-size: 14px
+
+@media (max-width: 992px)
+  .container
+    max-width: 700px
+  .search
+    &__input
+      width: 290px
+  .promo
+    &__offer
+      padding: 65px 0 60px 60px
+      background-size: 300px
+    &__subtitle
+      font-size: 18px
+      line-height: 25px
+      max-width: 400px
+  .cards
+    &__card
+      flex-basis: 48%
+  .info
+    &__category
+      max-width: 140px
+  .footer
+    &__link
+      font-size: 16px
+@media (max-width: 768px)
+  .container
+    max-width: 576px
+  .search
+    &__input
+      width: 200px
+  .promo
+    &__offer
+      padding-top: 80px
+      background-size: 280px
+    &__title
+      max-width: 280px
+      font-size: 24px
+  .cards
+    &__heading
+      &-title
+        font-size: 18px
+  .info
+    &__rating
+      flex-basis: 100%
+    &__category
+      max-width: 140px
+  .footer
+    &__links
+      padding-top: 10px
+    &__link
+      font-size: 16px
+@media (max-width: 576px)
+  .container
+    width: 90%
+  .header
+    &__top
+      flex-wrap: wrap
+  .search
+    width: 100%
+    margin-top: 15px
+    order: 5
+    &__input
+      width: 100%
+  .promo
+    &__offer
+      background-image: none
+  .cards
+    &__image
+      width: 100%
+    &__card
+      flex-basis: 100%
+      min-height: 0
+  .footer
+    &__menu
+      flex-direction: column
+      padding: 25px 0
+    &__nav
+      flex-direction: column
+      width: 80%
+    &__links
+      width: 100%
+    &__link
+      margin-right: 0
+    &__media
+      margin-top: 15px
+@media (max-width: 480px)
+  .buttons
+    min-width: 120px
+    &__enter, &__shopping-cart
+      width: 54px
+  .button-text
+    display: none
+  .promo
+    &__offer
+      padding: 80px 30px 0 30px
+  .restaurants
+    &__title
+      font-size: 24px
+    &__input
+      max-width: 200px
+      font-size: 10px
+  .footer
+    &__nav
+      width: 100%
+    &__logo
+      margin-right: 0
+    &__links
+      flex-direction: column
+      align-items: center
