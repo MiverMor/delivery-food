@@ -767,9 +767,13 @@ template {
   .restaurants__title {
     font-size: 24px;
   }
+  .restaurants__heading {
+    align-items: start;
+    flex-direction: column;
+  }
   .restaurants__input {
-    max-width: 200px;
-    font-size: 10px;
+    max-width: 100%;
+    width: 100%;
   }
   .footer__nav {
     width: 100%;
