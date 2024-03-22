@@ -25,6 +25,7 @@ button {
   padding: 8px 16px;
   background-color: #1890FF;
   border: none;
+  cursor: pointer;
 }
 
 .input {
@@ -437,7 +438,6 @@ template {
 .search__icon {
   position: absolute;
   left: 10px;
-  z-index: 1;
   width: 16px;
   height: 16px;
 }
@@ -716,6 +716,137 @@ template {
 }
 .footer__icon-media {
   margin-left: 21px;
+}
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+}
+.modal__dialog {
+  border-radius: 5px;
+  width: 95%;
+  max-width: 780px;
+  background-color: #fff;
+  margin: auto;
+  padding: 40px 45px;
+}
+.modal__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 45px;
+}
+.modal__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  color: #000;
+}
+.modal__close {
+  font-size: 36px;
+  border: none;
+  background-color: transparent;
+}
+.modal__body {
+  margin-bottom: 52px;
+}
+.modal__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.modal__footer_priceteg {
+  border-radius: 5px;
+  padding: 15px 20px;
+  background-color: #262626;
+  font-weight: 700;
+  font-size: 20px;
+  color: #fafafa;
+}
+.modal__buttons {
+  display: flex;
+  align-items: center;
+}
+.modal__buttons_checkout {
+  border-radius: 2px;
+  padding: 8px 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #fff;
+  margin-right: 16px;
+}
+.modal__buttons_cancel {
+  border: 1px solid #D9D9D9;
+  border-radius: 2px;
+  padding: 8px 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #595959;
+  background-color: #fff;
+}
+
+.food-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #D9D9D9;
+  margin-bottom: 15px;
+}
+.food-row__name {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 178%;
+  color: #000;
+}
+.food-row__price {
+  margin-left: auto;
+  margin-right: 47px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 160%;
+  color: #000;
+}
+.food-row__counter {
+  display: flex;
+  align-items: center;
+}
+.food-row__counter_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border: 1px solid #40A9FF;
+  border-radius: 2px;
+  padding: 5px 16px;
+  width: 39px;
+  height: 32px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 157%;
+  color: #40A9FF;
+}
+.food-row__counter_step {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #000;
+  margin-right: 13px;
+  margin-left: 13px;
+}
+
+.is-open {
+  display: flex;
 }
 
 @media (max-width: 1200px) {
