@@ -14,7 +14,12 @@
         margin-right: 5px
     &__price, &__category
       font-size: 14px
-
+  .restaurant
+    &__heading
+      &-title
+        font-size: 18px
+    &__image
+      width: 300px
 @media (max-width: 992px)
   .container
     max-width: 700px
@@ -38,6 +43,11 @@
   .footer
     &__link
       font-size: 16px
+  .restaurant
+    &__card
+      flex-basis: 48%
+    &__image
+      width: 335px
 @media (max-width: 768px)
   .container
     max-width: 576px
@@ -60,11 +70,19 @@
       flex-basis: 100%
     &__category
       max-width: 140px
+    &__ingredients
+      font-size: 16px
   .footer
     &__links
       padding-top: 10px
     &__link
       font-size: 16px
+  .restaurant
+    &__heading
+      &-title
+        font-size: 16px
+    &__image
+      width: 270px
 @media (max-width: 576px)
   .container
     width: 90%
@@ -99,6 +117,19 @@
       margin-right: 0
     &__media
       margin-top: 15px
+  .restaurant
+    &__image
+      width: 100%
+      height: 100%
+    &__heading
+      &-title
+        font-size: 24px
+    &__card
+      flex-basis: 100%
+      min-height: 0
+  .info
+    &__ingredients
+      font-size: 18px
 @media (max-width: 480px)
   .buttons
     min-width: 120px
